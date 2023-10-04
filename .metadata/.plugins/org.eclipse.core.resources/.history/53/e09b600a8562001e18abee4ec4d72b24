@@ -1,0 +1,43 @@
+package 메서드연습;
+
+import java.awt.FlowLayout;
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class 일기쓰기화면 {
+	
+	public static void main(String[] args) {
+		FlowLayout flow = new FlowLayout();
+		Font font = new Font("굴림" , 1, 50);
+		JFrame f = new JFrame();
+		f.setTitle("일기장쓰기 화면");
+		f.setSize(650, 10);
+		f.setLayout(flow);
+		
+		JLabel today1 = new JLabel();
+		
+		JLabel title1 = new JLabel();
+		
+		JLabel doc1 = new JLabel();
+		
+		JTextField today2 = new JTextField();
+		
+		JTextField title2 = new JTextField();
+		
+		JTextArea doc2 = new JTextArea();
+		
+		
+		
+
+		f.setVisible(true);
+
+	}
+	
+//	public void open() {
+//			}
+}
+

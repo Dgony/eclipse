@@ -1,0 +1,14 @@
+package 부품사용하기;
+
+import 부품만들기.TV;
+
+public class 우리집 {
+
+	public static void main(String[] args) {
+		// 지금 TV라는 클래스를 import해와서 myTV라는 object(instance)를 가져왔다.
+		TV myTv = new TV();
+		TV yourTv = new TV();
+
+	}
+
+}
