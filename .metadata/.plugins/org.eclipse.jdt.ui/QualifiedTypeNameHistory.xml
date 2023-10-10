@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="부품만들기.갱얼쥐"/>
 <fullyQualifiedTypeName name="com.mysql.cj.PingTarget"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
@@ -30,7 +29,6 @@
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="생성자.Mask"/>
 <fullyQualifiedTypeName name="메서드기본.계산기4"/>
 <fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="상속.FlyCar"/>
 <fullyQualifiedTypeName name="스태틱.딸"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
