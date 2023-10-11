@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="부품만들기.갱얼쥐"/>
 <fullyQualifiedTypeName name="com.mysql.cj.PingTarget"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.awt.RadialGradientPaint"/>
 <fullyQualifiedTypeName name="java.net.CookieHandler"/>
 <fullyQualifiedTypeName name="부품만들기.전화기"/>
@@ -14,11 +12,9 @@
 <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="메서드기본.계산기"/>
 <fullyQualifiedTypeName name="메서드기본.계산기2"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="메서드기본.계산기3"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="부품만들기.TV"/>
@@ -59,5 +55,9 @@
 <fullyQualifiedTypeName name="상속.FlyCar"/>
 <fullyQualifiedTypeName name="스태틱.딸"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
