@@ -1,5 +1,0 @@
-package 부품만들기;
-
-public class TV {
-	// TV라는 부류의 공통적인 특징을 가지고 틀을 만들 예정
-}

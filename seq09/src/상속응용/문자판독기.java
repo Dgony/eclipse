@@ -95,6 +95,19 @@ public class 문자판독기 extends JFrame {
 			}
 		});
 		
+		text.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				int c = r.nextInt(256) + 1;
+				int d = r.nextInt(256) + 1;
+				int f = r.nextInt(256) + 1;
+				Color randomcolor = new Color(c,d,f);
+				field.setForeground(randomcolor);
+				
+			}
+		});
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 	}
