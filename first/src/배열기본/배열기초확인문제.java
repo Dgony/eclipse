@@ -33,7 +33,7 @@ public class 배열기초확인문제 {
 			System.out.println(q + "번 값은 " + array[q]);
 		}
 		// 그림을 그려보세요
-
+		
 	}
 
 }

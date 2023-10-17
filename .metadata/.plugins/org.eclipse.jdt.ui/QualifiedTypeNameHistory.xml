@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="생성자복습.Bbs"/>
 <fullyQualifiedTypeName name="스태틱.Day"/>
-<fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.BoldAction"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="상속.슈퍼맨"/>
 <fullyQualifiedTypeName name="상속.원더우먼"/>
@@ -41,14 +40,9 @@
 <fullyQualifiedTypeName name="상속응용.문자판독기"/>
 <fullyQualifiedTypeName name="javax.swing.JLabel"/>
 <fullyQualifiedTypeName name="javax.swing.JTextField"/>
-<fullyQualifiedTypeName name="javax.swing.JTextArea"/>
-<fullyQualifiedTypeName name="java.awt.FlowLayout"/>
-<fullyQualifiedTypeName name="java.awt.Font"/>
 <fullyQualifiedTypeName name="javax.management.StringValueExp"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
-<fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.jsoup.nodes.Element"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
 <fullyQualifiedTypeName name="org.jsoup.select.Elements"/>
 <fullyQualifiedTypeName name="javax.print.Doc"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JTextArea"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="java.awt.Font"/>
+<fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.BoldAction"/>
 </qualifiedTypeNameHistroy>
