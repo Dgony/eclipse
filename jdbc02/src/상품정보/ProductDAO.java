@@ -3,9 +3,13 @@ package 상품정보;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class ProductDAO {
-	public void insert(ProductVO bag) {
+	
+	Connection con;
+	
+	public ProductDAO() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("1. 커넥터 연결 성공!!");
@@ -14,9 +18,19 @@ public class ProductDAO {
 			String user = "root";
 			String password = "1234";
 
-			Connection con = DriverManager.getConnection(url, user, password);
+			con = DriverManager.getConnection(url, user, password);
 			System.out.println("2. shop db연결 성공!!");
-
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void insert(ProductVO bag) {
+		try {
 			// 3. 2번에서 연결된 것을 가지고 sql문 생성
 			String sql = "insert into product values (?, ?, ?, ?, ?, ?)";
 			PreparedStatement ps = con.prepareStatement(sql); //
@@ -42,18 +56,9 @@ public class ProductDAO {
 			System.out.println("에러발생함.!!!!");
 		}
 	}
+	
 	public void delete(ProductVO bag) {
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			System.out.println("1. 커넥터 연결 성공!!");
-
-			String url = "jdbc:mysql://localhost:3306/shop?useUnicode=true&serverTimezone=Asia/Seoul";
-			String user = "root";
-			String password = "1234";
-
-			Connection con = DriverManager.getConnection(url, user, password);
-			System.out.println("2. shop db연결 성공!!");
-
 			// 3. 2번에서 연결된 것을 가지고 sql문 생성
 			String sql = "delete from product where id = ?";
 			PreparedStatement ps = con.prepareStatement(sql); //
@@ -78,16 +83,6 @@ public class ProductDAO {
 	
 	public void update(ProductVO bag) {
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			System.out.println("1. 커넥터 연결 성공!!");
-
-			String url = "jdbc:mysql://localhost:3306/shop?useUnicode=true&serverTimezone=Asia/Seoul";
-			String user = "root";
-			String password = "1234";
-
-			Connection con = DriverManager.getConnection(url, user, password);
-			System.out.println("2. shop db연결 성공!!");
-
 			// 3. 2번에서 연결된 것을 가지고 sql문 생성
 			String sql = "update product set name = ?, content = ?, price = ?, company = ?, img = ? where id = ?";
 			PreparedStatement ps = con.prepareStatement(sql); //
@@ -114,7 +109,4 @@ public class ProductDAO {
 		}
 	} // update
 	
-	public void delete(ProductVO bag) {
-
-	} // select
 }

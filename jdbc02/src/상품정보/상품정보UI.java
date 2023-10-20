@@ -186,26 +186,6 @@ public class 상품정보UI {
 			}
 		});
 		
-		b4.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				String id = t0.getText();
-				
-				ProductDAO dao = new ProductDAO();
-				//가방필요--> 데이터를 넣고 --> 가방을 전달 
-				ProductVO bag = new ProductVO();
-				bag.setId(id);
-								
-				if (dao.one(bag) == 1) {
-					System.out.println("우왕ㅋ굳");
-				}
-				
-				
-				
-			}
-		});
-		
 		/////
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true); // 맨끝에!!
