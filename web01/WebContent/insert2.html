@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	background: yellowgreen;
+	align-content: center;
+}
+
+button {
+	width: 150px;
+	height: 30px;
+	color: blue;
+	background: yellow;
+}
+
+td {
+	width: 150px;
+	height: 30px;
+	background: cyan;
+}
+
+.left {
+width: 100px;
+background: skyblue;
+text-align: center;
+}
+
+#bottom {
+background: yellow;
+}
+</style>
+</head>
+<body>
+	<h3>게시판 글쓰기 화면입니다.</h3>
+	<hr color="red">
+	<a href="index.html"><button>목차 페이지로</button>	</a>
+	<a href="bbs.html"><button>게시판정보 페이지로</button></a>
+	<form action="insert2.jsp">
+		<table align = "center" border=1>
+			<tr>
+				<td class = "left">제목 :</td>
+				<td><input name="title"></td>
+			</tr>
+			<tr>
+				<td class = "left">내용 :</td>
+				<td>
+				<textarea name = "content" rows="5" cols=""10></textarea></td>
+			</tr>
+			<tr>
+				<td class = "left">작성자 :</td>
+				<td><input name="writer"></td>
+			</tr>
+			<tr>
+				<td align = "center" id = "bottom" colspan="2"><button type="submit">게시판 글쓰기 요청</button></td>
+				<!-- form 안에 들어있는 버튼은type = "submit"가 생략된 전송용 버튼 -->
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	background: yellowgreen;
+}
+
+button {
+	width: 150px;
+	height: 30px;
+	color: blue;
+	background: yellow;
+}
+
+td {
+	width: 150px;
+	height: 30px;
+	background: cyan;
+}
+</style>
+</head>
+<body>
+	<h3>회원가입 화면입니다.</h3>
+	<hr color="red">
+	<a href="index.html">
+		<button>목차 페이지로</button>
+	</a>
+	<form action="insert.jsp">
+		<table align = "center" border=1>
+			<tr>
+				<td>아이디 :</td>
+				<td><input name="id"></td>
+			</tr>
+			<tr>
+				<td>패스워드 :</td>
+				<td><input name="pw"></td>
+			</tr>
+			<tr>
+				<td>이름 :</td>
+				<td><input name="name"></td>
+			</tr>
+			<tr>
+				<td>전화번호 :</td>
+				<td><input name="tel"></td>
+			</tr>
+			<tr>
+				<td align = "center" colspan="2"><button type="submit">회원가입요청</button></td>
+				<td><input type="submit" value="회원가입요청"></td>
+				<!-- form 안에 들어있는 버튼은type = "submit"가 생략된 전송용 버튼 -->
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
