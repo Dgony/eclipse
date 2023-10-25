@@ -1,3 +1,5 @@
+<%@page import="bean.MemberVO"%>
+<%@page import="bean.MemberDAO"%>
 <%@page import="com.sun.xml.internal.ws.encoding.XMLHTTPBindingCodec"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -14,13 +16,21 @@
     // 클라이언트로부터 데이터를 받아오는 객체 ==> request
     // 1. 클라이언트로부터 요청 받아오기
     String id = request.getParameter("id"); // input 안에 name = ""에 입력한 데이터를 받아옴
-    String pw = request.getParameter("pw");
-    String name = request.getParameter("name");
     String tel = request.getParameter("tel");
     
     // 2. DAO에 데이터를 주소로 전달하기
+    MemberDAO dao = new MemberDAO();
+    MemberVO bag = new MemberVO();
+    bag.setId(id);
+    bag.setTel(tel);
+    
+    int result = dao.update(id, tel);
     
     // 3. HTML로 작성해서 클라이언트에 응답하기
+    String resultText = "회원정보 수정에 실패했습니다!";
+    if(result == 1){
+    	resultText = "회원정보 수정에 성공했습니다!";
+    }
     %> 
      
      
@@ -33,9 +43,7 @@
 <body bgcolor="lime">
 <h5>당신이 입력한 회원 정보를 확인해주세요</h5>
 <hr color="green">
-가입한 아이디는 <%= id %><br> <!-- id 변수에 있는 것을 프린트해줘 -->
-가입한 비밀번호는 <%= pw %><br>
-가입한 이름은<%= name %><br>
-가입한 전화번호는<%= tel %><br>
+<%= resultText %> <!-- id 변수에 있는 것을 프린트해줘 -->
+
 </body>
 </html>
