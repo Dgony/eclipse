@@ -46,7 +46,7 @@
 		color: white;
 	}
 	.data { 
-		width: 100px;
+		width: 150px;
 		background: white;
 		color: blue;
 	}
@@ -67,6 +67,7 @@
 	<td class="left">패스워드</td>
 	<td class="left">이름</td>
 	<td class="left">전화번호</td>
+	<td class="left">상세정보</td>
 </tr>
 <% //스크립트릿 
 	for(MemberVO bag: list){ //{bag, bag, bag, ...}
@@ -76,6 +77,9 @@
 		<td class="data"><%= bag.getPw()%></td>
 		<td class="data"><%= bag.getName() %></td>
 		<td class="data"><%= bag.getTel()%></td>
+		<td class="data">
+		<a href = "one.jsp?id=<%= bag.getId() %>">
+		<button style = "background: gold">상세정보 보기</button></a></td>
 	</tr>
 <% } //for %>
 </table>

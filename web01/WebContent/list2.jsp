@@ -46,7 +46,7 @@
 		color: white;
 	}
 	.data { 
-		width: 100px;
+		width: 150px;
 		background: white;
 		color: blue;
 	}
@@ -73,7 +73,7 @@
 %>
 	<tr>
 		<td class="data"><%= bag.getNo() %></td>
-		<td class="data"><%= bag.getTitle()%></td>
+		<td class="data"><a href = "one2.jsp?no=<%= bag.getNo() %>"><%= bag.getTitle()%></a></td>
 		<td class="data"><%= bag.getContent() %></td>
 		<td class="data"><%= bag.getWriter()%></td>
 	</tr>

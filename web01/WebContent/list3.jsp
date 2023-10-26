@@ -46,7 +46,7 @@
 		color: white;
 	}
 	.data { 
-		width: 100px;
+		width: 150px;
 		background: white;
 		color: blue;
 	}
@@ -60,6 +60,7 @@
 </style>
 </head>
 <body bgcolor="red">
+<h3>상품목록입니다.</h3>
 <!-- 반복문(for)문 필요! -->
 <table border="1" align="center">
 <tr>
@@ -79,7 +80,9 @@
 		<td class="data"><%= bag.getContent() %></td>>
 		<td class="data"><%= bag.getPrice() %></td>>
 		<td class="data"><%= bag.getCompany() %></td>>
-		<td class="data"><img src = "img/<%= bag.getImg() %>"></td>>
+		<td class="data">
+		<a href = "one3.jsp?id=<%= bag.getId() %>">
+		<img src = "img/<%= bag.getImg() %>" width="100" height="100"></a></td>
 	</tr>
 <% } //for %>
 </table>
