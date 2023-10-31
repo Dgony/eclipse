@@ -67,7 +67,7 @@
 				<tr class="table-info">
 					<td rowspan="5" class="table-info"><img alt="상품이미지"
 						src="IMG/<%=dto2.getImg()%>" height="400" width="500"></td>
-					<td><span class="alert alert-danger">상품아이디: <%=dto2.getId()%>
+					<td><span class="alert alert-primary">상품아이디: <%=dto2.getId()%>
 					</span></td>
 				</tr>
 				<tr class="table-info">

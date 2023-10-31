@@ -40,13 +40,13 @@
 						<td width="200">내용</td>
 						<td width="300"><input name="content"></td>
 					</tr>
-					<tr class="table-warning">
-						<td>
-						</td>
+					<tr  class="table-warning">
+						<td width="200">작성자</td>
+						<td width="300"><input name="writer" type = "hidden" value ="${id}"></td>
 					</tr>
 					<tr  class="table-warning">
-						<td colspan="2">
-							<button type="submit" class="btn btn-danger">글쓰기 완료</button>
+						<td width="200" colspan="2">
+							<button type="submit">글쓰기</button>
 						</td>
 					</tr>
 				</table>
