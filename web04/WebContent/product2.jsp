@@ -3,34 +3,8 @@
 <%@page import="bean.ProductDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" type="text/css" href="CSS/project.css">
-</head>
-<body>
-	<div id="total">
-		<div id="top">
-			<jsp:include page="top.jsp"></jsp:include>
-		</div>
-		<div id="top2">
-			<jsp:include page="top2.jsp"></jsp:include>
-		</div>
-		<div id="center">
-			<%
-			if (session.getAttribute("id") != null) {
-			%>
-			<%=session.getAttribute("id")%>님 환영합니다. <a href="logout.jsp">
-				<button class="btn btn-outline-danger">로그아웃</button>
-			</a>
-			<%
-			}
-			%>
-			<hr color="blue">
+	
+	
 			<!-- 1) dao이용해서 상품목록 다 가지고 오자. -->
 			<jsp:useBean id="dto" class="bean.ProductDTO"></jsp:useBean>
 			<jsp:setProperty property="id" name="dto" />
@@ -39,6 +13,18 @@
 			ProductDAO dao = new ProductDAO();
 			ProductDTO dto2 = dao.one(dto);
 			%>
+	
+	
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="CSS/project.css">
+
+<script type="text/javascript" src = "JS/jquery-3.7.1.js"></script>
 			<script type="text/javascript">
 				$(function() {
 					$('#basket').click(function() {
@@ -60,6 +46,30 @@
 					})
 				})
 </script>
+</head>
+
+<body>
+	<div id="total">
+		<div id="top">
+			<jsp:include page="top.jsp"></jsp:include>
+		</div>
+		<div id="top2">
+			<jsp:include page="top2.jsp"></jsp:include>
+		</div>
+		<div id="center">
+			<%
+			if (session.getAttribute("id") != null) {
+			%>
+			<%=session.getAttribute("id")%>님 환영합니다. <a href="logout.jsp">
+				<button class="btn btn-outline-danger">로그아웃</button>
+			</a>
+			<%
+			}
+			%>
+			
+			<hr color="blue">
+			
+			
 			<span class="badge bg-success" style="font-size: 20px;">상품상세정보</span>
 			<hr>
 			<!-- 2) 가지고 온 데이터를 테이블로 만들어 보여주자. -->

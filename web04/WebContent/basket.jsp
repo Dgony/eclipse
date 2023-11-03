@@ -7,16 +7,7 @@
     <jsp:useBean id="bag" class="bean.ProductDTO"></jsp:useBean>
     <jsp:setProperty property="*" name="bag"/>
     <!-- jsp액션태그 -->
-    <%
-   /*  String id = request.getParameter("id");
-    String price = request.getParameter("price");
-    String title = request.getParameter("title");
     
-    ProductDTO bag = new ProductDTO();
-    bag.setId(id);
-    bag.setPrice(price);
-    bag.setContent(content); */
-    %>
     <%
     //기존의 장바구니 리스트가 있었는지 없었는지 체크해보자.
     //ArrayList<ProductDTO> list
@@ -24,21 +15,21 @@
     ArrayList<ProductDTO> list = null;
 	String s = ""; //장바구니에 아무것도 없을때 찍어줄 메세지
     if(bag.getId() != null){
-	    if(session.getAttribute("basket") == null){
+	    if(session.getAttribute("baske") == null){
 	    	//장바구니에 넣은적이 없다.(0개)
 	    	list = new ArrayList<ProductDTO>();
 	    }else{ //2번째 이후부터 실행
 	    	//장바구니에 넣은적이 있다.(1개 ==> 2개)
-	    	list = (ArrayList<ProductDTO>)session.getAttribute("basket");//{dto}
+	    	list = (ArrayList<ProductDTO>)session.getAttribute("baske");//{dto}
 	    }
 	    list.add(bag);//{dto} ==> {dto, dto} ==> {dto, dto, dto}
-	    session.setAttribute("basket", list); //{dto} ==> {dto, dto}
+	    session.setAttribute("baske", list); //{dto} ==> {dto, dto}
 	    //어떤것이 들어가도 괜찮을 때 Object으로 바꾸어서 넣어줌.
     }else{ //null이면(넘어오는 값이 없으면)
-		if (session.getAttribute("basket") == null) {
+		if (session.getAttribute("baske") == null) {
 			s = "장바구니에 아무것도 들어있지 않음.";
 		} else {
-			list = (ArrayList<ProductDTO>) session.getAttribute("basket");
+			list = (ArrayList<ProductDTO>) session.getAttribute("baske");
 		}
 	}
 

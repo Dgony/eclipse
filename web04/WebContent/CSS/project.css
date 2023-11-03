@@ -46,14 +46,14 @@ li:nth-child(2n - 1) {
 }
 
 #top2 {
-	width: 350px;
-	height: 200px;
+	width: 600px;
+	height: 400px;
 	background: black;
 	color: yellow;
 	position: fixed;
 	top: 5px;
 	right: 5px;
-	border-radius: 100px 100px;
+	border-radius: 50px 50px;
 }
 
 #center {
