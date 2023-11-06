@@ -1,4 +1,4 @@
-<%@page import="bean.MemberDAO"%>
+<%@page import="bean.CarDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <!-- 1) 데이터를 받아서, vo에 넣으세요.
@@ -14,14 +14,14 @@
      <jsp:setProperty property="*" name="bag"/>
     <!-- 2) dao에 insert(vo)를 요청 -->
     <%
-    MemberDAO dao = new MemberDAO();
-    int result = dao.insert(bag); //int(1/0)
-    String resultText = "";
-    if(result == 1){
-    	resultText = "회원가입에 성공했습니다.";
-    }else{
-    	resultText = "회원가입에 실패했습니다.";
-    }
+    	CarDAO dao = new CarDAO();
+        int result = dao.insert(bag); //int(1/0)
+        String resultText = "";
+        if(result == 1){
+        	resultText = "회원가입에 성공했습니다.";
+        }else{
+        	resultText = "회원가입에 실패했습니다.";
+        }
     %>
     <!-- 3) insert결과에 따라서 성공하면 member.jsp로 페이지 자동 넘김 -->
     
