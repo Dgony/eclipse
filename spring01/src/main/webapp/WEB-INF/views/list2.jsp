@@ -23,7 +23,9 @@
 <% for(ProductDTO bag: list){ %>
 <tr bgcolor="lightblue" align="center">
 	<td><%= bag.getId() %></td>
-	<td><a href="one2?id=<%= bag.getId() %>"><%= bag.getTitle() %></a></td>
+	<td>
+		<a href="one2?id=<%= bag.getId() %>"><%= bag.getTitle() %></a>
+	</td>
 	<td>
 		<img src="resources/img/<%= bag.getImg() %>" width="100" height="50">
 	</td>

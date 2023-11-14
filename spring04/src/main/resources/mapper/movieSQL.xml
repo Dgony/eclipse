@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="movie">
+<!-- ORM, Mapper파일! -->
+<!-- dto(Object) Relational(RDB, row) Mapping  ORM파일, mapper파일-->
+
+	<insert id="create" parameterType="movieVO" >
+		insert into movie values (#{id},#{title},#{rate},#{date},#{img})
+	</insert>
+	
+	<update id="update" parameterType="movieVO" >
+		update movie
+		set rate = #{rate} 
+		where id = #{id}
+	</update>
+	
+	<delete id="delete" parameterType= "String">
+		delete from movie
+		where id = #{id}
+	</delete>
+	
+	<!-- insert, delete, update의 resultType = "int"라서 생략함.1 -->
+	<!-- select는 어떤 dto에 넣는지 모르기 떄문에 resultType = "bookVO"를 지정해주어야 한다. 반드시! -->
+	<select id="list" resultType="movieVO">
+		select * from movie
+	</select>
+	
+	<select id="one" parameterType="String" resultType="movieVO">
+		select * from movie
+		where id = #{id}
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+

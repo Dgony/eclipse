@@ -11,7 +11,7 @@
 <hr color="red">
 
 <form action="one2">
-	보고 싶은 상품 번호 <input name="id" value="101"> 
+	보고 싶은 상품 번호 <input name="id" value="222"> 
 	<button>상품 상세 정보 요청</button>
 </form>
 </body>
