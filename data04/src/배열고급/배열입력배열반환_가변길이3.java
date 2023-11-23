@@ -1,0 +1,38 @@
+package 배열고급;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import 배열기본.Print;
+
+public class 배열입력배열반환_가변길이3 {
+
+	public static void main(String[] args) {
+		int[] n = { 44, 3, 22, 66, 88 };
+		int find = 3;
+		Solution6 s = new Solution6();
+		int[] result = s.solution(n, find);
+		System.out.println(Arrays.toString(result));
+	}
+}
+
+class Solution6 {
+	public int[] solution(int[] n, int find) {
+		// find로 나누어서 20보다 큰 수의 리스트를 구해보세요.
+		// 먼저 풀어보고, 리스트에 아무것도 없을 때 [-1]을
+		// 리턴하는 것을 추가해보자!
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		
+		for (int i = 0; i < n.length; i++) {
+			if (n[i] / find > 20) {
+				list.add(n[i]);
+			}
+		}
+		
+		int[] answer = new int[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			answer[i] = list.get(i);
+		}
+		return answer;
+	}
+}
