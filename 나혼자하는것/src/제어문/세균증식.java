@@ -8,6 +8,13 @@ public class 세균증식 {
 		// t시간후 세균의 수를 return
 		int n = 2;
 		int t = 10;
+		
+		int answer = n;
+		for (int i = 0; i < t; i++) {
+			answer *= 2; 
+		}
+		
+		System.out.println(answer);
 
 	}
 
