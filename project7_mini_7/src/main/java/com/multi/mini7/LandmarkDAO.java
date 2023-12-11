@@ -1,0 +1,17 @@
+package com.multi.mini7;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class LandmarkDAO {
+
+	@Autowired
+	SqlSessionTemplate my;
+	
+	public int insert (LandmarkVO landmarkVO) {
+		return my.insert("landmark.insert", landmarkVO);
+	}
+	
+}

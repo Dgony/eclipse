@@ -2,7 +2,6 @@ package com.multi.mvc04;
 
 import java.util.List;
 
-import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
