@@ -5,7 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript"></script>
+<%@ include file="header.jsp"%>
+<script type="text/javascript">
+
+</script>
 </head>
+
 <body>
 <h3>랜드마크 추가</h3>
 <form action="landmark_insert">
@@ -15,7 +21,7 @@
 위도 : <input name="lat"><br>
 경도 : <input name="lon"><br>
 도시 : <input name="city"><br>
-<button type="submit">서버로 전송</button>
+<button id = "b1" type="submit">서버로 전송</button>
 </form>
 </body>
 </html>

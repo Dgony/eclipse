@@ -5,8 +5,8 @@ public class LandmarkVO {
 	private String landmark_name; 
 	private String landmark_info;
 	private String landmark_pic;
-	private int lat;
-	private int lon;
+	private double lat;
+	private double lon;
 	private String city;
 	
 	public String getLandmark_name() {
@@ -27,16 +27,16 @@ public class LandmarkVO {
 	public void setLandmark_pic(String landmark_pic) {
 		this.landmark_pic = landmark_pic;
 	}
-	public int getLat() {
+	public double getLat() {
 		return lat;
 	}
-	public void setLat(int lat) {
+	public void setLat(double lat) {
 		this.lat = lat;
 	}
-	public int getLon() {
+	public double getLon() {
 		return lon;
 	}
-	public void setLon(int lon) {
+	public void setLon(double lon) {
 		this.lon = lon;
 	}
 	public String getCity() {
@@ -46,10 +46,13 @@ public class LandmarkVO {
 		this.city = city;
 	}
 	
+
 	@Override
 	public String toString() {
 		return "LandmarkVO [landmark_name=" + landmark_name + ", landmark_info=" + landmark_info + ", landmark_pic="
 				+ landmark_pic + ", lat=" + lat + ", lon=" + lon + ", city=" + city + "]";
 	}
+	
+
 
 }

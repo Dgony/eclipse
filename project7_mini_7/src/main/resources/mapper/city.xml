@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="city">
+	<insert id = "insert" parameterType="cityVO">
+		insert into state_city
+		values (
+		#{city},
+		#{country})
+	</insert>
+	
+	<select id="list" parameterType="cityVO" resultType="cityVO">
+		select *
+		from state_city
+	</select>
+	
+</mapper>

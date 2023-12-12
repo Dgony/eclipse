@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LandmarkController {
 
 	@Autowired
-	LandmarkDAO dao;
+	LandmarkService landmarkService;
 	
 	@RequestMapping ("landmark_insert")
-	public String insert(LandmarkVO landmarkVO) {
-		dao.insert(landmarkVO);
-		return "landmark_insert";
+	public void insert(LandmarkVO landmarkVO) {
+		landmarkService.insert(landmarkVO);
 	}
 	
 	

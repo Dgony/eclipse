@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-insert가 완료되었습니다.
+landmark insert가 완료되었습니다.
 </body>
 </html>
