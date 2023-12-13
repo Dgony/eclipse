@@ -14,4 +14,9 @@
 		#{city})
 	</insert>
 	
+	<select id="list" parameterType="landmarkVO" resultType="landmarkVO">
+		select *
+		from landmark
+	</select>
+	
 </mapper>

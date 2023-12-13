@@ -18,6 +18,15 @@ $(function () {
 		}) // ajax
 	}) // b1
 	
+	$('#b2').click(function () {
+		$.ajax({
+			url : "landmark_list",
+			success : function (x) {
+				$("#result").html(x)
+			}
+		}) // ajax
+	}) // b2
+	
 }) // $u
 </script>
 </head>

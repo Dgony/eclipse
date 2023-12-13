@@ -25,7 +25,7 @@ public class CityService {
 		List<CityVO> list = dao.list(cityVO);
 		System.out.println(list.size());
 		//views의 list1.jsp로 전달 
-		model.addAttribute("city_list", list);
+		model.addAttribute("list", list);
 	}
 	
 }

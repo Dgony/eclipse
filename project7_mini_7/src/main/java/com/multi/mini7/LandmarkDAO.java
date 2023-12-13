@@ -1,5 +1,7 @@
 package com.multi.mini7;
 
+import java.util.List;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -12,6 +14,10 @@ public class LandmarkDAO {
 	
 	public int insert (LandmarkVO landmarkVO) {
 		return my.insert("landmark.insert", landmarkVO);
+	}
+	
+	public List<LandmarkVO> list (LandmarkVO landmarkVO) {
+		return my.selectList("landmark.list", landmarkVO);
 	}
 	
 }
