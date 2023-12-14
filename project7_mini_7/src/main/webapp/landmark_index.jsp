@@ -9,7 +9,7 @@
 <script type="text/javascript">
 $(function () {
 	
-	$('#b1').click(function () {
+	$('#b1').click(function () { // state_city 불러오기
 		$.ajax({
 			url : "city_list",
 			success : function (x) {
@@ -18,7 +18,7 @@ $(function () {
 		}) // ajax
 	}) // b1
 	
-	$('#b2').click(function () {
+	$('#b2').click(function () { // landmark 불러오기
 		$.ajax({
 			url : "landmark_list",
 			success : function (x) {

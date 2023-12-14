@@ -17,7 +17,7 @@ public class 외교부_코로나최신소식 {
 		StringBuilder urlBuilder = new StringBuilder(
 				"http://apis.data.go.kr/1262000/SafetyNewsList/getCountrySafetyNewsList"); /* URL */
 		urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8")
-				+ "=63Jk4KYSAeT0Kif97Z6jQm7H4vk6jMJSJ29jfJB4wMtKA%2FDfN7igbdpFRmXbS%2BfopaXmPMqvIhJWeVLeuy2DXw%3D%3D"); /*
+				+ ""); /*
 																														 * Service
 																														 * Key
 																														 */

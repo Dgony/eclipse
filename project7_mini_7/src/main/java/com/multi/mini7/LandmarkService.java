@@ -21,10 +21,17 @@ public class LandmarkService {
 		}
 	}
 	
-	public void list(LandmarkVO landmarkVO , Model model) { //start, end
-		List<LandmarkVO> list = dao.list(landmarkVO);
+	public void list(String city , Model model) { 
+		List<LandmarkVO> list = dao.list(city);
 		System.out.println(list.size());
-		//views의 list1.jsp로 전달 
+		//views의 landmark_list.jsp에 model로 출력해온 db의 landmark를 list로 전달 
+		model.addAttribute("list", list);
+	}
+	
+	public void list2(String city , Model model) { 
+		List<LandmarkVO> list = dao.list2(city);
+		System.out.println(list.size());
+		//views의 landmark_list.jsp에 model로 출력해온 db의 landmark를 list로 전달
 		model.addAttribute("list", list);
 	}
 	

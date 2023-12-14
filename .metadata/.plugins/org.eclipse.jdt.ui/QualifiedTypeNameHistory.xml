@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.multi.test100.BbsVO"/>
-<fullyQualifiedTypeName name="com.multi.test100.PageVO"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="org.springframework.http.HttpRequest"/>
 <fullyQualifiedTypeName name="com.multi.test100.CarDAO"/>
 <fullyQualifiedTypeName name="com.multi.test100.PageVO2"/>
 <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
-<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="com.multi.test100.CarVO"/>
 <fullyQualifiedTypeName name="com.multi.api.NaverDAO"/>
 <fullyQualifiedTypeName name="com.multi.api.NaverVO"/>
@@ -41,12 +37,10 @@
 <fullyQualifiedTypeName name="com.multi.mini7.LandmarkDAO"/>
 <fullyQualifiedTypeName name="com.multi.mini7.LandmarkService"/>
 <fullyQualifiedTypeName name="org.springframework.web.context.annotation.RequestScope"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="com.multi.mini7.CityVO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.multi.mini7.CityDAO"/>
 <fullyQualifiedTypeName name="com.multi.mini7.CityService"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.ws.dump.MessageDumping"/>
 <fullyQualifiedTypeName name="org.springframework.messaging.handler.annotation.MessageMapping"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.multi.mini7.LandmarkVO"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.util.JSONPObject"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.jsonFormatVisitors.JsonObjectFormatVisitor"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="com.multi.api.네이버번역서비스"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 </qualifiedTypeNameHistroy>

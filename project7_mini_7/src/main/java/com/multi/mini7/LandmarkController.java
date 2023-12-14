@@ -17,9 +17,16 @@ public class LandmarkController {
 	}
 	
 	@RequestMapping ("landmark_list")
-	public void list(LandmarkVO landmarkVO , Model model) {
-		System.out.println(city);
-		landmarkService.list(landmarkVO, model);
+	public void list(String city , Model model) {
+		landmarkService.list(city, model);
 		
 	}
+	
+	@RequestMapping ("landmark_list2")
+	public void list2(String city , Model model) {
+		landmarkService.list(city, model); // list 전처리로 모두 가져오기
+		model.addAttribute("city", city); // 조건에 맞는 row만 출력하기 위한 값 전달
+		
+	}
+	
 }

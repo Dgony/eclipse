@@ -10,9 +10,9 @@
 $(function () {
 	$('.b1').click(function () {
 		$.ajax({
-			url : "landmark_list",
+			url : "landmark_list2",
 			data : ({
-				city : $('.b1').val()
+				city : $(this).val()
 			}),
 			success : function (x) {
 				$("#result").html(x)
@@ -30,7 +30,7 @@ $(function () {
     </tr>
 <c:forEach items="${list}" var="vo">
     <tr>
-        <td><button class ="b1">${vo.city}</button></td>
+        <td><button class ="b1" value = "${vo.city}">${vo.city}</button></td>
         <td>${vo.country}</td>
     </tr>
 </c:forEach>
