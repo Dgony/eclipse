@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 public class 청년지원센터_청년정책2 {
 
 	public ArrayList<YoungVO> parse() {	//url + parameter
-		String url = "https://www.youthcenter.go.kr/opi/empList.do";
+		String url = "";
 		String paramter = "";
 		
 		//http 요청 --> 응답(xml)

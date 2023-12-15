@@ -11,11 +11,11 @@ import java.net.URLEncoder;
 public class Test {
 
 	public static void main(String[] args) {
-		String clientId = "";// 애플리케이션 클라이언트 아이디값";
-		String clientSecret = "";// 애플리케이션 클라이언트 시크릿값";
+		String clientId = "zyh64vlnag";// 애플리케이션 클라이언트 아이디값";
+		String clientSecret = "1jCLsSNBwmxxoz0sdH4kYOtvqnhO8WXCdyhnrcGk";// 애플리케이션 클라이언트 시크릿값";
 		try {
 			String text = URLEncoder.encode("오늘은 목요일이야. 비도 와.", "UTF-8");
-			String apiURL = "";
+			String apiURL = "https://naveropenapi.apigw.ntruss.com/nmt/v1/translation";
 			URL url = new URL(apiURL);
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			con.setRequestMethod("POST");

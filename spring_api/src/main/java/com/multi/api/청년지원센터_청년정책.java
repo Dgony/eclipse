@@ -9,7 +9,7 @@ public class 청년지원센터_청년정책 {
 
 	public static void main(String[] args) {
 		//url + parameter
-		String url = "https://www.youthcenter.go.kr/opi/empList.do";
+		String url = "";
 		String paramter = "";
 		
 		//http 요청 --> 응답(xml)

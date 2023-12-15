@@ -18,7 +18,7 @@ public class 네이버_번역서비스2 {
 		String translatedText = "";
 		try {
 			String text = URLEncoder.encode(ko, "UTF-8");
-			String apiURL = ""; // apiURL
+			String apiURL = "";
 			URL url = new URL(apiURL);
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			con.setRequestMethod("POST");

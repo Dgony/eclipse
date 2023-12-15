@@ -24,4 +24,8 @@ public class LandmarkDAO {
 		return my.selectList("landmark.list", city);
 	}
 	
+	public int count() {
+		return my.selectOne("landmark.count"); 
+	}
+	
 }

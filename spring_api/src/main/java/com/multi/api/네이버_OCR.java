@@ -19,7 +19,7 @@ public class 네이버_OCR {
 	public static void main(String[] args) {
 		String apiURL = NaverAPIKey.OCR_URL;
 		String secretKey = NaverAPIKey.OCR_SECRET;
-		String imageFile = "/Users/administrator/Documents/workspace-sts-3.9.15.RELEASE/spring_api/image.png";
+		String imageFile = "";
 
 		try {
 			URL url = new URL(apiURL);

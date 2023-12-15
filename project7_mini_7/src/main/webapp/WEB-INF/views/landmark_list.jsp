@@ -11,10 +11,10 @@
         <td>도시</td>
     </tr>
 <c:forEach items="${list}" var="vo">
-    <tr>
+    <tr bgcolor="yellow">
         <td>${vo.landmark_name}</td>
         <td>${vo.landmark_info}</td>
-        <td>${vo.landmark_pic}</td>
+        <td><img src="resources/img/${vo.landmark_pic}" width="300" height="250"></td>
         <td>${vo.lat}</td>
         <td>${vo.lon}</td>
         <td>${vo.city}</td>

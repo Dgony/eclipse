@@ -19,4 +19,8 @@
 		from landmark
 	</select>
 	
+	<select id="count" resultType="int">
+		select count(*) from landmark
+	</select>
+	
 </mapper>

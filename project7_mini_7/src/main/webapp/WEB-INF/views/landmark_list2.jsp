@@ -12,10 +12,10 @@
 	</tr>
 	<c:forEach items="${list}" var="vo">
 		<c:if test="${vo.city eq city}">
-			<tr>
+			<tr bgcolor="pink">
 				<td>${vo.landmark_name}</td>
 				<td>${vo.landmark_info}</td>
-				<td>${vo.landmark_pic}</td>
+				<td><img src="resources/img/${vo.landmark_pic}" width="300" height="250"></td>
 				<td>${vo.lat}</td>
 				<td>${vo.lon}</td>
 				<td>${vo.city}</td>

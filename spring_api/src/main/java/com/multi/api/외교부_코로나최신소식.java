@@ -15,7 +15,7 @@ import org.json.XML;
 public class 외교부_코로나최신소식 {
 	public static void main(String[] args) throws IOException {
 		StringBuilder urlBuilder = new StringBuilder(
-				"http://apis.data.go.kr/1262000/SafetyNewsList/getCountrySafetyNewsList"); /* URL */
+				""); /* URL */
 		urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8")
 				+ ""); /*
 																														 * Service
