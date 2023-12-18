@@ -16,12 +16,12 @@ public class LandmarkDAO {
 		return my.insert("landmark.insert", landmarkVO);
 	}
 	
-	public List<LandmarkVO> list (String city) {
-		return my.selectList("landmark.list", city);
+	public List<LandmarkVO> list (LandmarkVO landmarkVO) {
+		return my.selectList("landmark.list", landmarkVO);
 	}
 	
-	public List<LandmarkVO> list2 (String city) {
-		return my.selectList("landmark.list", city);
+	public List<LandmarkVO> list2 (PageVO pageVO) {
+		return my.selectList("landmark.list2", pageVO);
 	}
 	
 	public int count() {

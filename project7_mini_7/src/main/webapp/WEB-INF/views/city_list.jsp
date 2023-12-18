@@ -12,7 +12,8 @@ $(function () {
 		$.ajax({
 			url : "landmark_list2",
 			data : ({
-				city : $(this).val()
+				city : $(this).val(),
+				page : 1
 			}),
 			success : function (x) {
 				$("#result").html(x)

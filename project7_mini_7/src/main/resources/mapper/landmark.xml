@@ -19,6 +19,23 @@
 		from landmark
 	</select>
 	
+	<select id="list2" parameterType="pageVO" resultType="landmarkVO">
+    SELECT *
+    FROM (
+        SELECT
+            ROW_NUMBER() OVER (ORDER BY landmark_name DESC) AS landmark_no,
+            landmark_name,
+            landmark_info,
+            landmark_pic,
+            lat,
+            lon,
+            city
+        FROM landmark
+        WHERE city = #{city}
+    ) AS l2
+    WHERE l2.landmark_no BETWEEN #{start} AND #{end}
+</select>
+	
 	<select id="count" resultType="int">
 		select count(*) from landmark
 	</select>

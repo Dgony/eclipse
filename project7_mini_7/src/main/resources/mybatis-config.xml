@@ -6,6 +6,7 @@
 	<typeAliases>
 		<typeAlias type="com.multi.mini7.LandmarkVO" alias="landmarkVO"></typeAlias>
 		<typeAlias type="com.multi.mini7.CityVO" alias="cityVO"></typeAlias>
+		<typeAlias type="com.multi.mini7.PageVO" alias="pageVO"></typeAlias>
 	</typeAliases>
 	
 	<mappers>

@@ -27,7 +27,7 @@ $(function () {
 		}) // ajax
 	}) // b2
 	
-}) // $u
+}) // $
 </script>
 </head>
 

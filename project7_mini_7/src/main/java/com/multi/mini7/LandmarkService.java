@@ -22,43 +22,32 @@ public class LandmarkService {
 		}
 	}
 	
-	public void list(String city , Model model) { 
-		List<LandmarkVO> list = dao.list(city);
+	public void list(LandmarkVO landmarkVO , Model model) { 
+		List<LandmarkVO> list = dao.list(landmarkVO);
 		System.out.println(list.size());
-		//views의 landmark_list.jsp에 model로 출력해온 db의 landmark를 list로 전달 
-		model.addAttribute("list", list);
-	}
-	
-	public void list2(String city , Model model) { 
-		List<LandmarkVO> list = dao.list2(city);
-		System.out.println(list.size());
-		
 		int count = dao.count(); //전체게시물 수
 		int pages = count / 10;
-		// views의 landmark_list.jsp에 model로 출력해온 db의 landmark를 list로 전달
-		model.addAttribute("list", list);
+		
+		//views의 landmark_list.jsp에 model로 출력해온 db의 landmark를 list로 전달 
+		model.addAttribute("list", list); // 조건에 맞는 row만 출력하기 위한 값 전달
+		model.addAttribute("city", landmarkVO.getCity()); 
 		model.addAttribute("pages", pages);
 		model.addAttribute("count", count);
 	}
 	
-	@RequestMapping("list2")
-	public void list2(PageVO pageVO, Model model) { //start, end
-		pageVO.setStartEnd();//start, end계산해주는 메서드
-		System.out.println(pageVO);
-		List<BbsVO> list = dao.list1(pageVO);
-		//전체 페이지수 구하기 
-		int count = dao.count(); //전체게시물 수 
-		System.out.println("전체 게시물수>> " + count);
+	public void list2(PageVO pageVO , Model model) { 
+		List<LandmarkVO> list = dao.list2(pageVO);
+		System.out.println(list.size());
+		int count = dao.count(); //전체게시물 수
 		int pages = count / 10;
-		if(count % 10 != 0) {
-			pages = count / 10 + 1;
-		}
-		//모델로 views까지 페이지수를 넘겨야 페이지수 버튼을 만들 수 있음. 
-		System.out.println("페이지당 가지고 온 게시물수>> " + list.size());
-		//views의 list1.jsp로 전달 
-		model.addAttribute("list", list);
+		
+		//views의 landmark_list.jsp에 model로 출력해온 db의 landmark를 list로 전달 
+		model.addAttribute("list", list); // 조건에 맞는 row만 출력하기 위한 값 전달
+		model.addAttribute("city", pageVO.getCity()); 
 		model.addAttribute("pages", pages);
 		model.addAttribute("count", count);
 	}
+	
+
 	
 }
