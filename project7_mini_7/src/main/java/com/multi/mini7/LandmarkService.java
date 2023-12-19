@@ -35,7 +35,8 @@ public class LandmarkService {
 		model.addAttribute("count", count);
 	}
 	
-	public void list2(PageVO pageVO , Model model) { 
+	public void list2(PageVO pageVO , Model model) {
+		pageVO.setStartEnd();
 		List<LandmarkVO> list = dao.list2(pageVO);
 		System.out.println(list.size());
 		int count = dao.count(); //전체게시물 수

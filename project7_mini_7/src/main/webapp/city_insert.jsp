@@ -26,7 +26,7 @@ function validateForm() {
 
 <body>
 <h3>도시 추가</h3>
-<form action="city_insert" onsubmit="validateForm(); return false;"> <!-- submit을 누르면 Controller가 city_insert를 찾아서 값 전달-->
+<form action="city_insert" onsubmit="return validateForm();"> <!-- submit을 누르면 Controller가 city_insert를 찾아서 값 전달-->
 도시 : <input name="city"><br>
 국가 : <input name="country"><br>
 <button id = "b1" type="submit">서버로 전송</button>

@@ -7,7 +7,6 @@ public class PageVO {
 	private int page;
 	private String city;
 	
-	
 	public void setStartEnd() {
 		start = 1 + (page -1) * 10;
 	//			1 + (1 - 1) * 10 = 1
@@ -16,14 +15,6 @@ public class PageVO {
 		end = page * 10;
 	//        1 * 10 = 10
 	//		  2 * 10 = 20
-	}
-	
-	public void setPage(int page) {
-		this.page = page;
-	}
-	
-	public int getPage() {
-		return page;
 	}
 	
 	public int getStart() {
@@ -38,19 +29,27 @@ public class PageVO {
 	public void setEnd(int end) {
 		this.end = end;
 	}
-
+	public int getPage() {
+		return page;
+	}
+	public void setPage(int page) {
+		this.page = page;
+	}
 	public String getCity() {
 		return city;
 	}
-
 	public void setCity(String city) {
 		this.city = city;
 	}
-
+	
+	
+	
 	@Override
 	public String toString() {
 		return "PageVO [start=" + start + ", end=" + end + ", page=" + page + ", city=" + city + "]";
 	}
+	
+	
 	
 	
 

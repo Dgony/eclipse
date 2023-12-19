@@ -34,10 +34,12 @@
         WHERE city = #{city}
     ) AS l2
     WHERE l2.landmark_no BETWEEN #{start} AND #{end}
-</select>
+	</select>
 	
 	<select id="count" resultType="int">
-		select count(*) from landmark
+		select count(*)
+		from landmark
+		where city = #{city}
 	</select>
 	
 </mapper>
