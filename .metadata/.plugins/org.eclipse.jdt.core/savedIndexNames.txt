@@ -4,11 +4,8 @@ INDEX VERSION 1.131+C:\eclipseworkspace\.metadata\.plugins\org.eclipse.jdt.core
 3193582282.index
 1904539175.index
 746673539.index
-1028277970.index
 1642536134.index
-4060644006.index
 3244820931.index
-2833088121.index
 1935999400.index
 1071587540.index
 1813312307.index
@@ -20,10 +17,8 @@ INDEX VERSION 1.131+C:\eclipseworkspace\.metadata\.plugins\org.eclipse.jdt.core
 4206381655.index
 3290244460.index
 3091982824.index
-1455773296.index
 1069045693.index
 2194581895.index
-1201391630.index
 2217442250.index
 3804817095.index
 173680289.index
@@ -49,7 +44,6 @@ INDEX VERSION 1.131+C:\eclipseworkspace\.metadata\.plugins\org.eclipse.jdt.core
 1262940326.index
 1651573292.index
 2616075390.index
-1449612962.index
 1405180750.index
 3924813846.index
 3881777827.index
@@ -61,7 +55,6 @@ INDEX VERSION 1.131+C:\eclipseworkspace\.metadata\.plugins\org.eclipse.jdt.core
 340918342.index
 2795276579.index
 592227530.index
-3781017224.index
 2597957407.index
 3353282908.index
 4029500759.index
@@ -91,7 +84,6 @@ INDEX VERSION 1.131+C:\eclipseworkspace\.metadata\.plugins\org.eclipse.jdt.core
 3697493764.index
 860208974.index
 1512827210.index
-516094379.index
 2063823227.index
 300795519.index
 2367788369.index
@@ -142,7 +134,6 @@ INDEX VERSION 1.131+C:\eclipseworkspace\.metadata\.plugins\org.eclipse.jdt.core
 2942473955.index
 3172503023.index
 605092724.index
-376207964.index
 2499951800.index
 2480852172.index
 2697280295.index

@@ -8,28 +8,23 @@
 <%@ include file="header.jsp"%>
 <script type="text/javascript">
 	$(function() {
+		
 		$('#b1').click(function() {
 			//var xhr = new XMLHttpRequest();
 			$.ajax({
-				url: "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json",
+				url: "apis.data.go.kr/B551011/KorService1/areaBasedList1",
 				data: {
-					key : "6d67fa164c41539d5695302942e640be",
-					targetDt :"20231209"
+					key : "gRjisabrZIfabIjre8qnZIy4ig724PgKzbxWE5KdbOHL4SD%2FneKsnNw2phKHIowgD5NXuBRaTpMEvSAY2uTA1Q%3D%3D"
 				},
 				dataType: "json",
 				success: function(json) {
 					console.log(json)
-					box_list = json.boxOfficeResult.dailyBoxOfficeList
-					for(let i = 0; i < box_list.length; i++){
-						console.log(box_list[i].movieNm)
+
 					}
-					/* console.log(json.boxOfficeResult.dailyBoxOfficeList[0].movieNm)
-					console.log(json.boxOfficeResult.dailyBoxOfficeList[0].openDt)
-					console.log(json.boxOfficeResult.dailyBoxOfficeList[0].rankOldAndNew)
-					console.log(json.boxOfficeResult.dailyBoxOfficeList[0].scrnCnt) */
 				}
 			}) 
 		})
+		
 	})
 </script>
 </head>
