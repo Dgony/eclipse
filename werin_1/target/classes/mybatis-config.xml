@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+	<typeAlias type="com.multi.werin.trip.TripVO" alias="tripVO"></typeAlias>
+<!-- 		<typeAlias type="com.multi.werin.trip.TripVO" alias="tripVO"></typeAlias>
+		<typeAlias type="com.multi.werin.trip.TripcmtVO" alias="tripcmtVO"></typeAlias>
+		<typeAlias type="com.multi.werin.landmark.LandmarkVO" alias="landmarkVO"></typeAlias>
+		<typeAlias type="com.multi.werin.landmark.LandmarkInfoVO" alias="landmarkinfoVO"></typeAlias>
+		<typeAlias type="com.multi.werin.chat.ChatVO" alias="chatVO"></typeAlias>
+		<typeAlias type="com.multi.werin.gowith.GowithcmtVO" alias="gowithcmt"></typeAlias>
+		<typeAlias type="com.multi.werin.gowith.GowithVO" alias="gowithVO"></typeAlias>
+		<typeAlias type="com.multi.werin.introducestore.IntroducestorecmtVO" alias="introducestorecmtVO"></typeAlias>
+		<typeAlias type="com.multi.werin.introducestore.IntroducestoreVO" alias="introducestoreVO"></typeAlias>
+		<typeAlias type="com.multi.werin.bbs.BbsVO" alias="bbsVO"></typeAlias>
+		<typeAlias type="com.multi.werin.bbs.BbscmtVO" alias="bbscmtVO"></typeAlias>
+		<typeAlias type="com.multi.werin.plan.ScheduleVO" alias="scheduleVO"></typeAlias>
+		<typeAlias type="com.multi.werin.plan.MapVO" alias="mapVO"></typeAlias>
+		<typeAlias type="com.multi.werin.plan.PlanVO" alias="planVO"></typeAlias>
+		<typeAlias type="com.multi.werin.member.MemberVO" alias="memberVO"></typeAlias>
+		<typeAlias type="com.multi.werin.gowith.PageVO" alias="pageVO"></typeAlias> 
+		<typeAlias type="com.multi.werin.main.BbsVO" alias="bbsVO"></typeAlias> 
+		<typeAlias type="com.multi.werin.main.PlanVO" alias="planVO"></typeAlias> -->
+	</typeAliases>
+
+	<mappers>
+	<mapper resource="mapper/trip.xml" />
+<!-- 		<mapper resource="mapper/trip.xml" />
+		<mapper resource="mapper/tripcmt.xml" />
+		<mapper resource="mapper/schedule.xml"/>
+		<mapper resource="mapper/plan.xml"/>
+		<mapper resource="mapper/member.xml"/>
+		<mapper resource="mapper/map.xml"/>
+		<mapper resource="mapper/landmarkinfo.xml"/>
+		<mapper resource="mapper/landmark.xml"/>
+		<mapper resource="mapper/introducestorecmt.xml"/>
+		<mapper resource="mapper/introducestore.xml"/>
+		<mapper resource="mapper/gowithcmt.xml"/>
+		<mapper resource="mapper/gowith.xml"/>
+		<mapper resource="mapper/chat.xml"/>
+		<mapper resource="mapper/bbscmt.xml"/>
+		<mapper resource="mapper/main.xml"/>
+		<mapper resource="mapper/bbs.xml"/> -->
+	</mappers>
+</configuration>
+
+
+
+
