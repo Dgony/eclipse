@@ -1,0 +1,27 @@
+@charset "UTF-8";
+hr {
+	border: dotted;
+	color: red;
+	size: 30px;
+}
+table {
+	border: double;
+	size: 5px;
+	font-size: 20px;
+	text-align: center;
+	background: pink;
+}
+th {
+	background: lime;
+}
+td:nth-child(2n+1) {
+	width: 200px;
+}
+td:nth-child(2n) {
+	width: 400px;
+}
+td:nth-child(2n):hover {
+	background: white;
+	color: red;
+	font-size: 30px;
+}
