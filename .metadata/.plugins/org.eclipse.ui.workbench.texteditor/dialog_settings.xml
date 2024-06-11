@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="simple"/>
 		<list key="findhistory">
+			<item value="doc"/>
 			<item value="u"/>
 			<item value="simple"/>
 			<item value="i"/>

@@ -16,7 +16,6 @@ button {
 </style>
 
 <script type="text/javascript">
-
 function fighting() {
 	alert("파이팅!");
 }
@@ -24,8 +23,6 @@ function fighting() {
 function goodbye() {
 	alert("잘가!");
 }
-
-
 </script>
 </head>
 <body>

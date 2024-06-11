@@ -41,7 +41,9 @@
 		$(".rest").html(rest);
 	}
 
-	$(document).ready(function() { // DOM이 준비되면 자동으로 ready의 내용을 실행시키는 객체
+	// $(document).ready(function() { ==> jQuery의 문법에서 $는 jQuery의 준말로, jQuery대신 쓸 수 있다.
+	// $(document).ready(function()) ==> $(function) 또한 아무것도 쓰지 않고 그냥 함수를 쓰는 것으로 DOM ready 함수를 축약할 수 있다. 
+	jQuery(document).ready(function() { // DOM이 준비되면 자동으로 ready의 내용을 실행시키는 객체
 		print();
 		여행하다();
 		쉬다();
