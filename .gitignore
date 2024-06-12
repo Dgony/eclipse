@@ -1,1 +1,71 @@
 /.metadata/
+
+# 일반적인 OS 파일들
+.DS_Store
+Thumbs.db
+
+# 로컬 환경 관련 파일들
+*.local
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+*.tmp
+*.bak
+*.swp
+*.swo
+*.log
+
+# VS Code
+.vscode/
+
+# 빌드 결과물
+target/
+out/
+
+# Gradle
+.gradle/
+build/
+
+# Maven
+.mvn/
+target/
+build/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot
+*.war
+*.jar
+
+# 로그 파일들
+*.log
+
+# 환경 설정 파일들
+application-*.yml
+application-*.properties
+
+# 기타
+node_modules/
+dist/
+build/
+coverage/
+tmp/
+
