@@ -1,71 +1,77 @@
-/.metadata/
-
-# 일반적인 OS 파일들
-.DS_Store
-Thumbs.db
-
-# 로컬 환경 관련 파일들
-*.local
-*.log
-*.swp
-*.swo
-*.bak
-*.tmp
-
-# IntelliJ IDEA
-.idea/
-*.iws
-*.iml
-*.ipr
-
-# Eclipse
-.project
-.classpath
-.settings/
-.metadata/
-*.tmp
-*.bak
-*.swp
-*.swo
-*.log
-
-# VS Code
-.vscode/
-
-# 빌드 결과물
-target/
-out/
-
-# Gradle
-.gradle/
-build/
-
-# Maven
-.mvn/
-target/
-build/
-
-# Java
+# Compiled class file
 *.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
 *.jar
 *.war
 *.ear
 
-# Spring Boot
-*.war
-*.jar
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
 
-# 로그 파일들
-*.log
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
-# 환경 설정 파일들
-application-*.yml
-application-*.properties
+# VS Code
+.vscode/
 
-# 기타
-node_modules/
-dist/
+# Eclipse
+.metadata/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.localhistory/
+
+# Mac
+.DS_Store
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle
 build/
-coverage/
-tmp/
 
+# Other
+!README.md
+!LICENSE
+!*.md
+!gradlew
+!gradlew.bat
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.msi
+*.msm
+*.msp
+*.cab
+
+# Windows shortcuts
+*.lnk
