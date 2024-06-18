@@ -1,4 +1,4 @@
-package 부품만들기_클래스;
+package 부품만들기_클래스_GUI;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -19,7 +19,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 
-public class GUI만들기 {
+public class GUI만들기연습 {
 	
 	public static void main(String[] args) {
 		// 연습단계라 한 눈에 보기 위해 GUI의 컴포넌트(GUI를 만들기 위한 클래스)들을 지역변수로 선언하는 중

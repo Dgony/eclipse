@@ -1,4 +1,4 @@
-package 부품만들기_클래스;
+package 부품만들기_클래스_GUI;
 
 import javax.swing.JOptionPane;
 
