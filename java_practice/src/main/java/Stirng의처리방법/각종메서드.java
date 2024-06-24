@@ -6,7 +6,7 @@ public class 각종메서드 {
 
 	public static void main(String[] args) {
 		// String을 처리하는 다양한 방법들
-		String s1 = "나는 프로그래머야!aBCd";
+		String s1 = "  나는 프로그래머야!aBCd  ";
 		String s2 = "진짜!";
 		
 		System.out.println(s1.concat(s2)); // 문자열 결합 메서드
@@ -22,6 +22,7 @@ public class 각종메서드 {
 		System.out.println(s1.length()); // 글자수 체크
 		System.out.println(s1.replace("나", "너")); // 왼쪽항을 오른쪽항으로 교체
 		System.out.println(s1.indexOf("나")); // 특정 글자의 인덱스를 찾아주는 메서드
+		System.out.println(s1.trim()); // String의 앞 뒤 공백을 자르는 메서드
 		
 		String[] arr1 = s1.split(""); // 문자열을 특정 단어 기준으로 해서 배열로 분리하는 방법
 		// 공백을 기준으로 하면 모든 단어를 분리하는 다음과 같은 결과를 보여준다.
