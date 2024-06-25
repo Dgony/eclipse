@@ -32,6 +32,7 @@
 .vscode/
 
 # Eclipse
+**/target/m2e-wtp/web-resources/META-INF/
 .metadata/
 *.tmp
 *.bak
