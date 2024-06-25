@@ -1,4 +1,4 @@
-package 부품만들기_클래스_GUI;
+package GUI클래스;
 
 import java.util.Scanner;
 
