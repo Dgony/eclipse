@@ -24,7 +24,6 @@ public class 배열의가장큰수찾기 {
 		
 		answer[0] = array2[array2.length-1];
 		
-		System.out.println(Arrays.toString(answer));
 		
 		
 	}

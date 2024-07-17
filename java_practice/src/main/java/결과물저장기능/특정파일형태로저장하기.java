@@ -3,7 +3,7 @@ package 결과물저장기능;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class 특정파일형태로저장하기 {
+public class 특정파일형태로저장하기 	{
 	
 	public static void main(String[] args) {
 		// txt 형태로 저장하기, String만 가능
