@@ -34,7 +34,8 @@ public class JDBC_기본 {
 		ps.execute(); // 준비된 ps를 실행, con의 db 경로를 찾아 insertsql문 실행 
 		System.out.println("4. SQL문 전송 성공");
 		
-			
+		con.close();
+		ps.close();	
 	}
 
 }

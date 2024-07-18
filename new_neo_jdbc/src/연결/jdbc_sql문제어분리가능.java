@@ -34,7 +34,8 @@ public class jdbc_sql문제어분리가능 {
 		ps.execute();  
 		System.out.println("4. SQL문 전송 성공");
 		
-			
+		con.close();
+		ps.close();	
 	}
 
 }
