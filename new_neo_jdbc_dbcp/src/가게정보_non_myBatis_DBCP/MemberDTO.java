@@ -1,4 +1,4 @@
-package 가게정보_non_myBatis;
+package 가게정보_non_myBatis_DBCP;
 
 public class MemberDTO {
 	
