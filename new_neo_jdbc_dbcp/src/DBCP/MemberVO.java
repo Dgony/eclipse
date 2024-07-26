@@ -1,11 +1,11 @@
-package 가게정보_non_myBatis_DBCP;
+package DBCP;
 
-public class MemberDTO {
+public class MemberVO {
 	
-	private String id;
-	private String pw;
-	private String name;
-	private String tel;
+	String id;
+	String pw;
+	String name;
+	String tel;
 	
 	public String getId() {
 		return id;
@@ -31,10 +31,10 @@ public class MemberDTO {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
-	
+	 
 	@Override
 	public String toString() {
-		return "ShopDTO [id=" + id + ", pw=" + pw + ", name=" + name + ", tel=" + tel + "]";
+		return "MemberVO [id=" + id + ", pw=" + pw + ", name=" + name + ", tel=" + tel + "]";
 	}
 	
 	

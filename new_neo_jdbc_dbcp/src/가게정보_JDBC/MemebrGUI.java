@@ -1,4 +1,4 @@
-package 가게정보_non_myBatis_DBCP;
+package 가게정보_JDBC;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
