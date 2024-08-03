@@ -17,9 +17,9 @@
     <property name="configLocation" value="classpath:mybatis-config.xml"></property>
 </bean>
 <!-- classpath: src/main/resources아래를 말함. -->
-
+ 
 <!-- dbcp의 싱글톤 객체 생성 -->
-<!-- db프로그램의 2단계까지 담당. driver설정, db연결 -->
+<!-- db프로그램의 2단계까지 담당. driver설정, db연결 --> 
 <!--  BasicDataSource dbcp = new BasicDataSource -->
 <bean id="dbcp" class="org.apache.commons.dbcp.BasicDataSource">
     <property name="driverClassName" value="${jdbc.driver}"></property>
