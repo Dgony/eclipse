@@ -5,6 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<script type="text/javascript" src="${path}/resources/js/forjquery.js"></script>
+<script type="text/javascript">
+
+</script>
+
 </head>
 <body>
 
@@ -35,7 +41,7 @@
 <form action="movieupdate">
 아이디 : <input name="id"><br>
 평점 : <input name="rate"><br>
-<button type="submit">서버로 전송</button>
+<button type="submit" id = "b1">서버로 전송</button>
 </form>
 
 </body>
