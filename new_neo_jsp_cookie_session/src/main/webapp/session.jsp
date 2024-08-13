@@ -8,10 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-// session.setAttribute(name(String), value(Object))
-session.setAttribute("view", 0); // String, Object만 지켜서 넣으면 됨
-%>
-세션값 확인 : <%= session.getAttribute("view") %><Br>
 </body>
+<form action="sessionCheck.jsp">
+	로그인 id : <input type="text" name = "id"><br>
+	로그인 pw : <input type="text" name = "pw"><br>
+	<button style="color: red;, background: yellow">로그인 처리 요청</button>
+</form>
 </html>
