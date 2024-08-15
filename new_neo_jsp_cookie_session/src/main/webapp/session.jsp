@@ -9,6 +9,11 @@
 </head>
 <body>
 </body>
+<% 
+// 세션 끊고 시작하기
+session.removeAttribute("id");
+
+%>
 <form action="sessionCheck.jsp">
 	로그인 id : <input type="text" name = "id"><br>
 	로그인 pw : <input type="text" name = "pw"><br>

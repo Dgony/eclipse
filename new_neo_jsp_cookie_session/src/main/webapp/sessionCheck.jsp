@@ -25,15 +25,25 @@ if(id.equals(id2) && pw.equals(pw2)) {
 	// jsp의 내장 객체 - request, response, session, out 전부 해당
 	// JavaScript의 내장 객체 - location, window, document, history
 } else {
-	out.print("재로그인 해주세요.");
+	out.print("재로그인 해주세요.<br>");
 }
 
 %>
 
 <body>
-로그인 결과 : <%= result %>
-<%if(session.getAttribute("id")==null) {%>
+로그인 결과 : <%= result %><br>
+<%if(session.getAttribute("id")!=null) {%>
 세션 id 값은 : <%= session.getAttribute("id")%>
-<% }%>
+<% }%><br>
+<hr>
+<a href = "news.jsp">
+	<button>뉴스사이트</button>
+</a><br>
+<a href = "shopping.jsp">
+	<button>쇼핑사이트</button>
+</a><br>
+<a href = "mail.jsp">
+	<button>메일사이트</button>
+</a>
 </body>
 </html>
