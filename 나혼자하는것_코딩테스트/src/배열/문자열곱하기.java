@@ -20,7 +20,9 @@ public class 문자열곱하기 {
 		
 		
 		// 번외, repeat 메서드가 존재함
-		String answer2 = "";		
+		// java 11부터 사용 가능
+		String answer2 = "";
+		// System.out.println(my_string.repeat(k));
 		
 
 		
