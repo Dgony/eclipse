@@ -9,7 +9,8 @@ public class flag에따라다른값반환하기 {
 		int b = 7;
 		boolean flag = true;
 		
-		answer = flag
+		int answer = flag ? a + b : a - b;
+		System.out.println(answer);
 
 	}
 
