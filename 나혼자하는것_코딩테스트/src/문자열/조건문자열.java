@@ -32,6 +32,7 @@ public class 조건문자열 {
 		}
 		
 		// 참고해야할 다른 사람의 풀이 존재;
+		System.out.println((">".equals(ineq) ? n > m : n < m) || ("=".equals(eq) ? n == m : false) ? 1 : 0);
 
 		
 	}
