@@ -16,9 +16,17 @@ public class 주사위게임2 {
 		int b = 6;
 		int c = 1;
 		
-		int x = a + b + c;
-		int y = Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2);
-		int z = Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3);
+		// 1. 세 숫자를 각각 비교할 수 있는 방법이 필요
+		// 2. if 문이나 삼항연산자의 조건을 사용해 결과값을 대입할 수 있을 듯
+		
+		int answer = a + b + c;
+		
+		int x = (int) (Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2));
+		int y = (int) (Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3));
+		
+		
+		
+		System.out.println(answer);
 		
 
 	}
