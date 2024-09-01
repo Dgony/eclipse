@@ -24,6 +24,9 @@ public class 수조작하기2_정수와문자열 {
 		// 2. 마찬가지로 for문을 사용해 임의의 문자열 변수에 배열의 순서대로 문자열 할당
 		
 		String answer = "";
+		for (int i = 1; i < numLog.length; i++) {
+			
+		}
 
 	}
 
