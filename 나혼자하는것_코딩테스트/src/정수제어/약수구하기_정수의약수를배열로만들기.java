@@ -32,6 +32,9 @@ public class 약수구하기_정수의약수를배열로만들기 {
         for (int i = 0; i < list.size(); i++) {
             answer[i] = list.get(i);  // Integer 값을 int로 언박싱
         }
+        
+        // 위와 동일한 과정을 java 8 이후 추가된 stream으로 실행하는 과정
+        // int[] answer = list.stream().mapToInt(i -> i).toArray();
 
 		System.out.println(Arrays.toString(answer));
         
