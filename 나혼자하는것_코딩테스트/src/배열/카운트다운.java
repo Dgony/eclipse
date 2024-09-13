@@ -1,0 +1,24 @@
+package 배열;
+
+import java.util.Arrays;
+
+public class 카운트다운 {
+
+	public static void main(String[] args) {
+		// 정수 start_num와 end_num가 주어질 때, 
+		// start_num에서 end_num까지 1씩 감소하는 수들을 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.
+		// 0 ≤ end_num ≤ start_num ≤ 50
+		
+		int start_num = 10;
+		int end_num = 3;
+		
+		int[] answer = new int[start_num - end_num + 1];
+		
+		for (int i = 0; start_num >= end_num; start_num--, i++) {
+			answer[i] = start_num;
+		}
+
+		System.out.println(Arrays.toString(answer));
+	}
+
+}
