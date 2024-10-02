@@ -1,6 +1,6 @@
 package 문자열;
 
-public class 문자열정수의합_문자열전체나누어다루기 {
+public class 문자열정수의합_문자열나누고아스키코드값계산 {
 
 	public static void main(String[] args) {
 		// 한 자리 정수로 이루어진 문자열 num_str이 주어질 때,
@@ -13,7 +13,7 @@ public class 문자열정수의합_문자열전체나누어다루기 {
 		
 		int answer = 0;
 		for (int i = 0; i < num_str.length(); i++) {
-			answer += (int)num_str.charAt(i);
+			answer += num_str.charAt(i) - '0';	
 		}
 		
 		System.out.println(answer);
