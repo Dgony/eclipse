@@ -1,8 +1,9 @@
 package 배열;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class 배열의원소만큼추가하기 {
+public class 배열의원소만큼추가하기_배열과리스트넘나들기 {
 
 	public static void main(String[] args) {
 		// 아무 원소도 들어있지 않은 빈 배열 X가 있습니다.
@@ -16,18 +17,22 @@ public class 배열의원소만큼추가하기 {
 
 		// 1. 배열에 계속 원소를 추가하는 방식은 그냥 인터페이스를 이용하는 게 좋을 수 있다.
 		// 2. 그럼에도 불구하고 배열로 해결하는 방법을 생각해보면
-		// 배열의 모든 요소를 순회하고 그 값에 맞는 배열을 새로 만들어야 함
+		// 	  배열의 모든 요소를 순회하고 그 값에 맞는 배열을 새로 만들어야 함
 		// 3. 새 배열에 원소를 추가하는 방법은 반복문 두개를 사용해야 할 듯?
 
-		ArrayList<Integer> answer = new ArrayList<Integer>();
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = arr[i]; j > 0; j--) {
-				answer.add(arr[i]);
-			}
-		}
+		ArrayList<Integer> resultList = new ArrayList<Integer>();
+		for (int a : arr) {
+            for (int i = 0; i < a; i++) {
+                resultList.add(a);
+            }
+        }
 		
-		System.out.println(answer.toArray(new Integer[0]));
-
+		int[] answer = new int[resultList.size()];
+        for (int i = 0; i < resultList.size(); i++) {
+        	answer[i] = resultList.get(i);
+        }
+        
+        System.out.println(Arrays.toString(answer));
 	}
 
 }
