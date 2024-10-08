@@ -1,6 +1,6 @@
 package 문자열;
 
-public class A강조하기 {
+public class A강조하기_toLowercase_replace {
 
 	public static void main(String[] args) {
 		// 문자열 myString이 주어집니다. 

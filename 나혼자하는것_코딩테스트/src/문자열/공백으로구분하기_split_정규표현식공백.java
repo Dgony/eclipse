@@ -1,6 +1,8 @@
 package 문자열;
 
-public class 공백으로구분하기 {
+import java.util.Arrays;
+
+public class 공백으로구분하기_split_정규표현식공백 {
 
 	public static void main(String[] args) {
 		// 단어가 공백 한 개로 구분되어 있는 문자열 my_string이 매개변수로 주어질 때, 
@@ -13,7 +15,7 @@ public class 공백으로구분하기 {
 		
 		// 1. 문자열을 c타입 for문을 이용해 전체 확인하면서 공백을 만나면 새로 만든 배열에 집어넣기
 		
-		System.out.println(my_string.split(" "));
+		System.out.println(Arrays.toString(my_string.split(" ")));
 		
 		// 2. 간단한 메서드를 발견해서 split을 사용하게 됨.
 
