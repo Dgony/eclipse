@@ -1,4 +1,4 @@
-package 정수제어;
+package 정수;
 
 public class 수조작하기2_정수와문자열 {
 

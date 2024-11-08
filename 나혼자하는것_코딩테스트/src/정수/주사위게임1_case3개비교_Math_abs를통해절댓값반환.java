@@ -1,4 +1,4 @@
-package 정수제어;
+package 정수;
 
 public class 주사위게임1_case3개비교_Math_abs를통해절댓값반환 {
 

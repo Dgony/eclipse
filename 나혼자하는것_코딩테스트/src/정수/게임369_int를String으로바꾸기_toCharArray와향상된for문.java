@@ -1,4 +1,4 @@
-package 정수제어;
+package 정수;
 
 public class 게임369_int를String으로바꾸기_toCharArray와향상된for문 {
 

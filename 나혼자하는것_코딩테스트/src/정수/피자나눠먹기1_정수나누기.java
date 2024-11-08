@@ -1,4 +1,4 @@
-package 정수제어;
+package 정수;
 
 public class 피자나눠먹기1_정수나누기 {
 

@@ -1,4 +1,4 @@
-package 정수제어;
+package 정수;
 
 public class 두수의연산값비교하기_parseInt_사칙연산_삼항연산자 {
 

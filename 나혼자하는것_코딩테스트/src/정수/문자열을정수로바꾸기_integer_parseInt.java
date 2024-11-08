@@ -1,4 +1,4 @@
-package 정수제어;
+package 정수;
 
 public class 문자열을정수로바꾸기_integer_parseInt {
 

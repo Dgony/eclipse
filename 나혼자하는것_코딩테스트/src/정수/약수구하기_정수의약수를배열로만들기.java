@@ -1,4 +1,4 @@
-package 정수제어;
+package 정수;
 
 import java.util.ArrayList;
 import java.util.Arrays;

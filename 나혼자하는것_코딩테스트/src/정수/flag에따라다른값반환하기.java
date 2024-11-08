@@ -1,4 +1,4 @@
-package 정수제어;
+package 정수;
 
 public class flag에따라다른값반환하기 {
 
