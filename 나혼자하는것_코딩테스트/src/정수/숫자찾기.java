@@ -16,11 +16,8 @@ public class 숫자찾기 {
 		// 2. 반복문을 통해 배열 순회를 한다
 		// 3. k에 해당하는 값을 만나면 그 index를 반환한다.   
 		
-		System.out.println((num+"").indexOf(k+""));
+		int answer =  (num+"").contains(k+"") ? (num+"").indexOf(k+"") + 1 : -1;
 		
-		int answer = (num+"").indexOf(k+"");
-		
-		System.out.println(answer);
 
 	}
 
