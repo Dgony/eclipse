@@ -1,5 +1,7 @@
 package 배열;
 
+import java.util.Arrays;
+
 public class 배열만들기3 {
 
 	public static void main(String[] args) {
@@ -15,12 +17,18 @@ public class 배열만들기3 {
 		// 2. 결과 배열은 interval의 a2 - (a1-1), b2 - (b1-1) 만큼의 길이로 설정
 		
 		int[] answer = new int[intervals[0][1] - (intervals[0][0]-1) + intervals[1][1] - (intervals[1][0]-1)];
+		
+		int idx = 0;
 		for (int i = 0; i < intervals.length; i++) {
-			for (int j = 0; j < answer.length; j++) {
-				
+			for (int j = intervals[i][0]; j <= intervals[i][1]; j++) {
+				answer[idx] = arr[j];
+				idx++;
 			}
 		}
+		
+		System.out.println(Arrays.toString(answer));
 
+		
 	}
 
 }
