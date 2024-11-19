@@ -1,6 +1,6 @@
 package 정수;
 
-public class 주사위게임2 {
+public class 주사위게임2_재귀함수로제곱값계산 {
 
 	public static void main(String[] args) {
 		// 1부터 6까지 숫자가 적힌 주사위가 세 개 있습니다. 세 주사위를 굴렸을 때 나온 숫자를 각각 a, b, c라고 했을 때 얻는 점수는 다음과 같습니다.
@@ -17,21 +17,47 @@ public class 주사위게임2 {
 		// 1. 세 숫자를 각각 비교할 수 있는 방법이 필요
 		// 2. if 문이나 삼항연산자의 조건을 사용해 결과값을 대입할 수 있을 듯
 		
-		int answer = 0;
-		
 		int x = a + b + c;
-		int y = (int) (Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2));
-		int z = (int) (Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3));
+		int y = a*a + b*b + c*c;
+		int z = a*a*a + b*b*b + c*c*c;
 		
-		answer = 
-				a != b && b != c && a != c ? 
-						x : a == b && b == c && a == c ?
-								x * y : a == b || b == c || a == c ? x * y * z : 0; 
-								
+		int answer = x * y;
 		
+		if (a == b && b == c) {
+			answer = x * y * z;
+		} else if (a != b && b != c && a != c) {
+			answer = x;
+		}
 		
 		System.out.println(answer);
 		
+// 인상깊은 풀이
+		// 재귀함수를 활용한 제곱값 계산 
+//class Solution {
+    //public int solution(int a, int b, int c) {
+        //int answer = 1;
+
+        //int count = 1;
+        //if(a == b || a == c || b == c) {
+            //count++;
+        //}
+
+        //if(a == b && b == c) {
+            //count++;
+        //}
+
+        //for(int i = 1; i <= count; i++) {
+            //answer *= (pow(a,i)+pow(b,i)+pow(c,i));
+        //}
+
+        //return answer;
+//    }
+
+    //private int pow(int a, int b) {
+        //if(b == 0) return 1;
+        //return a * pow(a, b-1);
+    //}
+//}
 
 	}
 
