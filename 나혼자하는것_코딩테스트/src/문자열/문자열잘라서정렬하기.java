@@ -15,19 +15,22 @@ public class 문자열잘라서정렬하기 {
 		// 3. 빈 문자열을 반환하지 않는다는 것은 x 이외에 띄어쓰기가 있다는 얘기이므로, 
 		//    split 메서드 없이 일일이 분리한 뒤 모시깽
 		
-		String myString = "dxccxbbbxaaaa";
+		String myString = "dxccxbb  bxaaaa";
 		
-		String[] answer = myString.split("X");
+		String[] answer = myString.split("x");
+		
+		System.out.println(Arrays.toString(answer));
 		
 		Arrays.stream(answer)
-         .filter(s -> !s.isEmpty()) 
+         .filter(s -> s != null && !s.isEmpty())
          .sorted()                 
          .toArray(String[]::new);  
 		
+		System.out.println(Arrays.toString(answer));
 		System.out.println(Arrays.toString(Arrays.stream(answer)
-		         .filter(s -> !s.isEmpty()) 
+		         .filter(s -> s != null && !s.isEmpty())
 		         .sorted()                 
-		         .toArray(String[]::new));
+		         .toArray(String[]::new)));
 
 	}
 
