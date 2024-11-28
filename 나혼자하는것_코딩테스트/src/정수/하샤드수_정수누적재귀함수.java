@@ -1,6 +1,6 @@
 package 정수;
 
-public class 히샤드수 {
+public class 하샤드수_정수누적재귀함수 {
 
 	public static void main(String[] args) {
 		// 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다. 
@@ -16,17 +16,20 @@ public class 히샤드수 {
 		
 		int answer = 0;
 		
+		answer = plus(x);
+		
+		System.out.println(answer);
+		
 		
 		
 
 	}
 	
-	public int plus(int y) {
-		if (y / 10 < 1) {
-			return 1;
-		}
-		return y;
-		
-	}
+	private static int plus(int y) {
+        if (y / 10 < 1) {
+            return y;
+        }
+        return (y % 10) + plus(y / 10); 
+    }
 
 }
