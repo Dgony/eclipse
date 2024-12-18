@@ -16,9 +16,12 @@
 	비밀번호 : <input type="text", id = "#pw"><br>
 	이름 : <input type="text", id = "#name"><br>
 	연령 : <input type="text", id = "#age"><br>
-	성별 : <input type="text", id = "#gender">
-	<button type="submit">서버로 전송</button>
+	성별 : <input type="text", id = "#gender"><br>
+	<button type="submit">서버로 전송</button>  
 </form>
+
+<hr>
+<button>DB 내용 조회하기 </button>
 
 </body>
 </html>
