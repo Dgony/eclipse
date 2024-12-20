@@ -2,29 +2,22 @@ package com.multi.mvc02;
 
 public class MemberDTO {
 	
-	private int numb;
 	private String id;
-	private int pw;
+	private String pw;
 	private String name;
-	private int age;
+	private String age;
 	private String gender;
 	
-	public int getNumb() {
-		return numb;
-	}
-	public void setNumb(int numb) {
-		this.numb = numb;
-	}
 	public String getId() {
 		return id;
 	}
 	public void setId(String id) {
 		this.id = id;
 	}
-	public int getPw() {
+	public String getPw() {
 		return pw;
 	}
-	public void setPw(int pw) {
+	public void setPw(String pw) {
 		this.pw = pw;
 	}
 	public String getName() {
@@ -33,10 +26,10 @@ public class MemberDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getAge() {
+	public String getAge() {
 		return age;
 	}
-	public void setAge(int age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
 	public String getGender() {
@@ -48,9 +41,10 @@ public class MemberDTO {
 	
 	@Override
 	public String toString() {
-		return "MemberDTO [numb=" + numb + ", id=" + id + ", pw=" + pw + ", name=" + name + ", age=" + age + ", gender="
-				+ gender + "]";
-	}  
+		return "MemberDTO [id=" + id + ", pw=" + pw + ", name=" + name + ", age=" + age + ", gender=" + gender + "]";
+	}
+	
+	
 	
 
 }

@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<h2>데이터 입력 성공!!</h2>
 
 
 </body>
