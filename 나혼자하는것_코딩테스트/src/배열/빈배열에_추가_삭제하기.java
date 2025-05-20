@@ -1,5 +1,6 @@
 package 배열;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class 빈배열에_추가_삭제하기 {
@@ -38,7 +39,14 @@ public class 빈배열에_추가_삭제하기 {
 			}
 		}
 		
+		int[] x1 = new int[x.size()];
+		
+		for (int i = 0; i < x1.length; i++) {
+			x1[i] = x.get(i);
+		}
+		
 		System.out.println(x);
+		System.out.println(Arrays.toString(x1));
 
 
 	}
