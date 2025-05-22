@@ -23,8 +23,13 @@ public class A로_B만들기 {
 		
 		Arrays.sort(arr1);
 		Arrays.sort(arr2);
+
+		System.out.println(Arrays.toString(arr1));
+		System.out.println(Arrays.toString(arr2));
 		
-		arr1.equals(arr2);
+		System.out.println(Arrays.equals(arr1, arr2));
+		
+		arr1.equals(arr2); 
 	}
 
 }
