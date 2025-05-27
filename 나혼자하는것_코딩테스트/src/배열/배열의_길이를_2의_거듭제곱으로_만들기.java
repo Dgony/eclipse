@@ -34,6 +34,20 @@ public class 배열의_길이를_2의_거듭제곱으로_만들기 {
 		
 		System.out.println(Arrays.toString(answer));
 		
+		// int length = arr.length;
+        //int powerOfTwo = 1;
+
+        //while (powerOfTwo < length) {
+            //powerOfTwo *= 2;
+        //}
+
+        //int[] result = new int[powerOfTwo];
+        //for (int i = 0; i < length; i++) {
+            //result[i] = arr[i];
+        //}
+
+        //return result;
+		
 
 	}
 
