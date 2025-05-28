@@ -1,6 +1,7 @@
 package 배열;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class 문자열_묶기 {
 
@@ -15,12 +16,26 @@ public class 문자열_묶기 {
 		String[] strArr = {"a","bc","d","efg","hi"};
 		
 		// 1. 원소의 길이를 셀 수 있어야 함
-		//    길이 세기는 length
 		// 2. 원소 길이별 카운트를 해야 함
-		//    카운트 저장을 위한 변수
+		//	  길이별로 묶기 위해선 중복 없는 map  
 		// 3. 카운트 중 가장 높은 결과를 반환해야 함
 		
-		 
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		
+		for (String str : strArr) {
+			map.put(str.length(), map.getOrDefault(str.length(), 0) + 1);
+		}
+		
+		int answer = 0; 
+		
+		for (int count : map.values()) {
+			answer = Math.max(count, answer);
+		}
+		
+		System.out.println(answer);
+		
+		
+		
 	}
 
 }
