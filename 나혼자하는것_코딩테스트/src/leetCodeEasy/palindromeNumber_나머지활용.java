@@ -2,7 +2,7 @@ package leetCodeEasy;
 
 import java.util.Stack;
 
-public class palindromeNumber {
+public class palindromeNumber_나머지활용 {
 
 	public static void main(String[] args) {
 
@@ -23,12 +23,8 @@ public class palindromeNumber {
 			answer *= 10;
 			answer += x1 % 10;
 			x1 /= 10;
-			System.out.println(answer);
-			System.out.println(x1);
 		}
 		
-		System.out.println(answer);
-		System.out.println(x1);
 
 	}
 
