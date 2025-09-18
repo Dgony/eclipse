@@ -15,17 +15,22 @@ public class removeElement {
 		int[] nums = {3,2,2,3};
 		int val = 3;
 		
-		// 길이가 1인 배열은 무조건 그대로 반환  
+		// 길이가 1인 배열은 무조건 그대로 반환
+		// pointer를 하나 두고 하나씩 당기기
 		
 		if(nums.length == 0) System.out.println(0);
 		
 		int p = 0;
 		for (int i = 0; i < nums.length; i++) {
-			if (nums[i] != nums[p]) {
-				
+			if (nums[i] != val) {
+				nums[p] = nums[i];
+				p++;
 			}
 		}
 		
+		// 소요 시간 0ms	
+		// 시간복잡도 O(N)
+		// 공간복잡도 O(1)
 		
 	}
 
