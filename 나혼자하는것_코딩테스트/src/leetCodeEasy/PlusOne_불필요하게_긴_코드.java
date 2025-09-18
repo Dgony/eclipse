@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class PlusOne {
+public class PlusOne_불필요하게_긴_코드 {
 
 	public static void main(String[] args) {
 		
@@ -31,11 +31,12 @@ public class PlusOne {
 			
 		} else {
 			
-			for (int i = digits.length - 1; i > 0; i--) {
-				if (digits[i] == 9 || digits[i] == 10) {
+			digits[digits.length - 1] = 0;
+			for (int i = digits.length - 2; i >= 0; i--) {
+				if (digits[i] == 9) {
 					digits[i] = 0;
-					digits[i - 1] += 1;
 				} else {
+					digits[i] += 1;
 					i = 0;
 					System.out.println(Arrays.toString(digits));
 				}
@@ -46,8 +47,32 @@ public class PlusOne {
 			for (int i = 1; i < result.length; i++) {
 				result[i] = 0;
 			}
+			System.out.println(Arrays.toString(result));
 			
 			
+			// 소요 시간 0ms
+			// 시간복잡도 O(n)
+			// 공간복잡도 O(n)
+			
+			// if 조건문을 반복문 순회에 넣을 수도 있다는 것을 간과함
+//			class Solution {
+//			    public int[] plusOne(int[] digits) {
+//			        int n = digits.length;
+//
+//			        for (int i = n - 1; i >= 0; i--) {
+//			          
+//			            if (digits[i] < 9) {
+//			                digits[i]++;
+//			                return digits;
+//			            }
+//			            digits[i] = 0;
+//			        }
+//
+//			        int[] result = new int[n + 1];
+//			        result[0] = 1;
+//			        return result;
+//			    }
+//			}
 			
 			
 		}
